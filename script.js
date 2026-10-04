@@ -52,9 +52,11 @@ const hasDataSaver = navigator.connection?.saveData === true;
 const canUseBackgroundVideo = window.matchMedia('(min-width: 981px)').matches && !prefersReducedMotion && !hasDataSaver;
 
 if (heroVideo && canUseBackgroundVideo) {
-  const source = heroVideo.querySelector('source[data-src]');
-  if (source) {
-    source.src = source.dataset.src;
+  const sources = heroVideo.querySelectorAll('source[data-src]');
+  if (sources.length) {
+    sources.forEach(source => {
+      source.src = source.dataset.src;
+    });
     heroVideo.load();
     heroVideo.play().catch(() => {
       // O poster permanece visível quando o navegador bloqueia a reprodução automática.

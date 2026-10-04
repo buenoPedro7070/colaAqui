@@ -132,6 +132,7 @@ section[id] { scroll-margin-top: 104px; }
 .professional-media { position: relative; min-width: 0; padding: 0 22px 28px 0; }
 .professional-photo { position: relative; min-height: 620px; overflow: hidden; border: 1px solid rgba(214,173,87,.28); border-radius: 32px; background: linear-gradient(145deg,#2c271e,#8e6a2d); box-shadow: 0 34px 90px rgba(0,0,0,.38); }
 .professional-photo::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg,transparent 56%,rgba(10,10,10,.82) 100%); pointer-events: none; }
+.professional-photo picture { display: block; height: 100%; }
 .professional-photo img { width: 100%; height: 620px; object-fit: cover; object-position: center top; filter: saturate(.82) contrast(1.04); }
 .professional-signature { position: absolute; right: 0; bottom: 0; z-index: 2; width: min(82%,320px); padding: 20px 22px; border: 1px solid rgba(214,173,87,.38); border-radius: 20px; background: linear-gradient(135deg,#efd589,#b98a34); color: #15120d; box-shadow: 0 18px 44px rgba(0,0,0,.3); }
 .professional-signature span, .professional-signature strong { display: block; }
@@ -151,6 +152,7 @@ section[id] { scroll-margin-top: 104px; }
 .project-grid { display: grid; grid-template-columns: 1.2fr .8fr .8fr; gap: 20px; }
 .project-card { border-radius: var(--radius); overflow: hidden; border: 1px solid var(--line); background: #fff; box-shadow: 0 12px 34px rgba(33,27,20,.06); }
 .project-art { height: 280px; position: relative; overflow: hidden; }
+.project-art picture { display: block; width: 100%; height: 100%; }
 .project-art img { width: 100%; height: 100%; object-fit: cover; }
 .project-copy { padding: 22px; }
 .project-copy span { color: #967330; font-size: 10px; text-transform: uppercase; letter-spacing: .15em; font-weight: 800; }
@@ -184,7 +186,8 @@ section[id] { scroll-margin-top: 104px; }
 .social-box { background: linear-gradient(120deg,#111 0 55%,#201c16 55%); color: #fff; border-radius: 34px; padding: 58px; display: grid; grid-template-columns: 1fr .78fr; gap: 60px; align-items: center; overflow: hidden; position: relative; }
 .social-copy p { color: #b9b2a7; }
 .instagram-mock { width: 100%; aspect-ratio: 1346 / 1168; background: #fff; color: #111; border-radius: 26px; overflow: hidden; box-shadow: 0 30px 70px rgba(0,0,0,.26); }
-.instagram-mock > img { width: 100%; height: 100%; object-fit: contain; object-position: center; display: block; }
+.instagram-mock > picture { display: block; width: 100%; height: 100%; }
+.instagram-mock picture > img { width: 100%; height: 100%; object-fit: contain; object-position: center; display: block; }
 .ig-top { display: grid; grid-template-columns: 48px 1fr auto; align-items: center; gap: 10px; padding: 14px; }
 .ig-avatar { width: 46px; height: 46px; border-radius: 50%; padding: 2px; background: linear-gradient(135deg,#8c6425,#e4c978); }
 .ig-avatar img { width: 100%; height: 100%; object-fit: cover; border-radius: 50%; }

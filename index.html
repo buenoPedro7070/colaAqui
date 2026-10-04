@@ -84,7 +84,8 @@
     <section class="hero section-pad">
       <video class="hero-background" muted loop playsinline preload="none" poster="assets/teto-optimized.jpg"
         aria-hidden="true" tabindex="-1">
-        <source data-src="assets/env.mp4" type="video/mp4">
+        <source data-src="assets/env-optimized.webm" type="video/webm">
+        <source data-src="assets/env-optimized.mp4" type="video/mp4">
       </video>
       <div class="hero-glow hero-glow-one"></div>
       <div class="hero-glow hero-glow-two"></div>
@@ -184,8 +185,11 @@
         <div class="project-grid">
           <article class="project-card project-one reveal">
             <div class="project-art art-kitchen">
-              <img src="assets/cozinha-optimized.jpg" width="401" height="347"
-                alt="Bancada e marcenaria renovadas com acabamento claro" loading="lazy" decoding="async">
+              <picture>
+                <source srcset="assets/cozinha.webp" type="image/webp">
+                <img src="assets/cozinha-optimized.jpg" width="401" height="347"
+                  alt="Bancada e marcenaria renovadas com acabamento claro" loading="lazy" decoding="async">
+              </picture>
             </div>
             <div class="project-copy"><span>Inspiração</span>
               <h3>Cozinhas e marcenaria</h3>
@@ -194,8 +198,11 @@
           </article>
           <article class="project-card project-two reveal">
             <div class="project-art art-stone">
-              <img src="assets/textura-optimized.jpg" width="327" height="341"
-                alt="Painel de quarto com acabamento amadeirado escuro" loading="lazy" decoding="async">
+              <picture>
+                <source srcset="assets/textura.webp" type="image/webp">
+                <img src="assets/textura-optimized.jpg" width="327" height="341"
+                  alt="Painel de quarto com acabamento amadeirado escuro" loading="lazy" decoding="async">
+              </picture>
             </div>
             <div class="project-copy"><span>Inspiração</span>
               <h3>Texturas e acabamentos</h3>
@@ -204,8 +211,11 @@
           </article>
           <article class="project-card project-three reveal">
             <div class="project-art art-commercial">
-              <img src="assets/teto-optimized.jpg" width="720" height="958"
-                alt="Teto com acabamento amadeirado em ambiente decorado" loading="lazy" decoding="async">
+              <picture>
+                <source srcset="assets/teto.webp" type="image/webp">
+                <img src="assets/teto-optimized.jpg" width="720" height="958"
+                  alt="Teto com acabamento amadeirado em ambiente decorado" loading="lazy" decoding="async">
+              </picture>
             </div>
             <div class="project-copy"><span>Inspiração</span>
               <h3>Envelopamento de tetos</h3>
@@ -222,9 +232,12 @@
       <div class="container professional-grid">
         <div class="professional-media reveal">
           <div class="professional-photo">
-            <img src="assets/rodrigo_sf.png" width="1122" height="1402"
-              alt="Profissional da Cola Aqui especializado em envelopamento decorativo" loading="lazy"
-              decoding="async" />
+            <picture>
+              <source srcset="assets/rodrigo_sf.webp" type="image/webp">
+              <img src="assets/rodrigo_sf.png" width="1122" height="1402"
+                alt="Profissional da Cola Aqui especializado em envelopamento decorativo" loading="lazy"
+                decoding="async" />
+            </picture>
           </div>
           <div class="professional-signature">
             <span>Especialização comprovada</span>
@@ -323,8 +336,11 @@
             rel="noopener">Ver Instagram agora <span>↗</span></a>
         </div>
         <div class="instagram-mock" aria-hidden="true">
-          <img src="assets/instagramm.png" width="1346" height="1168" alt="" loading="lazy"
-            decoding="async">
+          <picture>
+            <source srcset="assets/instagramm.webp" type="image/webp">
+            <img src="assets/instagramm.png" width="1346" height="1168" alt="" loading="lazy"
+              decoding="async">
+          </picture>
         </div>
       </div>
     </section>
